@@ -1,0 +1,53 @@
+.sidenav{
+    color: #efefef;
+    background: #345DA7;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 10px;
+    transition: 0.5s;
+}
+
+.navitem {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    display: block;
+    transition: 0.3s;
+    border: 10px;
+}
+
+.navitems {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.navitem:hover {
+    background-color: rgba(2,43,58, 0.4);
+}
+
+
+
+.sidenav-top {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    transition: 0.3s;
+}
+
+#colapse-btn {
+    background-color: #345DA7;
+    border-radius: 0;
+    border-bottom-right-radius: 40%;
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    top: 0;
+    transition: 0.5s;
+}
