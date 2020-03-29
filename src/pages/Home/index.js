@@ -7,9 +7,14 @@ const Home = () => {
     return (
         <div>
             <h2>EM CONSTRUÇÃO</h2>
+            <hr></hr>
+
             <br></br>
             
             <img src={loading} ></img>
+
+            <br />
+            <br />
 
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget sit amet tellus cras adipiscing. Id neque aliquam vestibulum morbi blandit cursus risus. Vitae tortor condimentum lacinia quis. Lacus sed turpis tincidunt id aliquet risus feugiat in. Ultrices in iaculis nunc sed augue. Auctor urna nunc id cursus. Sagittis eu volutpat odio facilisis mauris sit amet massa. Commodo quis imperdiet massa tincidunt nunc pulvinar sapien et ligula. Rhoncus aenean vel elit scelerisque. Auctor eu augue ut lectus. Rhoncus dolor purus non enim praesent elementum. Et egestas quis ipsum suspendisse. Duis ut diam quam nulla porttitor massa id neque aliquam. Aliquam id diam maecenas ultricies.
 
