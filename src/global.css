@@ -11,6 +11,7 @@ body {
     font: 400 14px Roboto;
     background: #c2c1c2;
     color: #070707;
+    min-height: 100vh;
 }
 
 .wrapper {
@@ -22,6 +23,8 @@ body {
     background-color: #efefef;
     height: 100%;
     bottom: 0;
+    min-height: 100vh;
+    position: relative;
 }
 
 .text-link, .text-link:focus, .text-link:hover, .text-link:visited, .text-link:link, .text-link:active {

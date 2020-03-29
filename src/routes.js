@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter, Route, Switch } from  'react-router-dom';
 
 import Navbar from './Layout/Navbar/Navbar'
+import Footer from './Layout/Footer/Footer'
 
 import Home from './pages/Home';
 import About from './pages/About';
@@ -20,7 +21,7 @@ const Routes = () => {
                 <Route path="/projects" component={Projects} />
                 <Route path="/notes" component={Notes} />
             </Switch>
-            
+
         </BrowserRouter>
     );
 }

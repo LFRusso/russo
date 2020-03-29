@@ -1,0 +1,18 @@
+img {
+    max-width: 100%;
+    width: 500px;
+}
+
+.post-container {
+    margin-bottom: 20px;
+}
+
+.post-content {
+    max-width: 100%;
+    margin: 30px;
+}
+
+.post-header {
+    margin-left: 10px;
+}
+
