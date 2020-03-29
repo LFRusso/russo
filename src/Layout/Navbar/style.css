@@ -2,18 +2,16 @@
     color: #efefef;
     background: #022B3A;
     height: 100%;
-    width: 0;
+    width: 200px;
     position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
     overflow-x: hidden;
     padding-top: 10px;
-    transition: 0.5s;
+    display:block;
 
-    outline-width:  5px;
-    outline-color: #022B3A;
-    outline-style: solid;
+    transition: 0.3s;
 }
 
 .navitem {
@@ -21,7 +19,6 @@
     text-decoration: none;
     font-size: 25px;
     display: block;
-    transition: 0.3s;
     border: 10px;
 }
 
@@ -30,31 +27,34 @@
     flex-direction: column;
     justify-content: space-between;
     padding-top: 20px;
+
+    transition: 0.3s;
 }
 
 .navitem:hover {
     background-color: rgba(255,255,255,0.1);
+    transition: 0.5s;
 }
-
-
 
 .sidenav-foot {
     bottom: 0;
     position: absolute;
+    
     transition: 0.3s;
 }
 
 .sidenav-foot h3:hover {
     font-size: 3em;
-
-    transition: 0.3s;
+    
+    transition: 0.5s;;
 }
 
 .sidenav-foot h3:not(:hover) {
-    transition: 0.3s;
+    
+    transition: 0.5s;
 }
 
-#colapse-btn {
+.collapse-btn {
     background-color: #022B3A;
     border-radius: 0;
     border-bottom-right-radius: 40%;
@@ -62,5 +62,21 @@
     z-index: 0;
     left: 0;
     top: 0;
-    transition: 0.5s;
+    transition: 0s;
+    margin-left: 200px;
+
+    transition: 0.3s;
+}
+
+.collapsed.sidenav {
+    width: 0;
+}
+
+
+.collapsed.collapse-btn {
+    margin-left: 0;
+}
+
+.collapsed {
+    display:block;
 }

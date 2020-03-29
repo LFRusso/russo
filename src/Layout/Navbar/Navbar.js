@@ -1,30 +1,57 @@
 import React from 'react';
 import Navitem from './Navitem';
 import {Link} from 'react-router-dom';
+import { FaBars } from 'react-icons/fa'
 import './style.css';
 
-const Navbar = () => {
 
-    const colapse = () => {
-        document.getElementById("sidenav").style.width = "0"; 
-        document.getElementById("colapse-btn").style.marginLeft = "0";
+
+class Navbar extends React.Component {
+
+    constructor(props) {
+
+        super(props);
+        this.toggleNavbar = this.toggleNavbar.bind(this);
+
+        this.state = {
+            collapsed: true,
+        };
     }
 
-    return (
-        <div className="sidenav" id="sidenav">
 
-            <div class="navitems">
-                <Link to="/" class="text-link" onClick={colapse}><Navitem> Home </Navitem></Link>
-                <Link to="/about" class="text-link" onClick={colapse}><Navitem> Sobre </Navitem></Link>
-                <Link to="/projects" class="text-link" onClick={colapse}><Navitem> Projetos </Navitem></Link>
-                <Link to="/notes" class="text-link" onClick={colapse}><Navitem> Notas </Navitem></Link>
-            </div>
+    toggleNavbar() {
+        this.setState({
+        collapsed: !this.state.collapsed,
+        });
+        console.log(this.state.collapsed)
+    }
 
-            <div className="sidenav-foot">
-                <h3>@russo</h3>
+    render () {
+        const collapsed = this.state.collapsed ? "collapsed" : "";
+
+        return ( 
+            <div class="navbar">
+
+                <div className={"sidenav " + collapsed} onClick={this.toggleNavbar}>
+                    <div class="navitems">
+                        <Link to="/" className="text-link" onClick={ this.toggleNavbar }><Navitem> Home </Navitem></Link>
+                        <Link to="/about" className="text-link" onClick={ this.toggleNavbar }><Navitem> Sobre </Navitem></Link>
+                        <Link to="/projects" className="text-link" onClick={ this.toggleNavbar }><Navitem> Projetos </Navitem></Link>
+                        <Link to="/notes" className="text-link" onClick={ this.toggleNavbar }><Navitem> Notas </Navitem></Link>
+                    </div>
+                    <div className="sidenav-foot">
+                        <h3>@russo</h3>
+                    </div>
+                </div>
+
+                <button className={"btn collapse-btn " + collapsed} onClick={ this.toggleNavbar } type="button">
+                    <FaBars color="#efefef" size={30} /> 
+                </button>
+                
             </div>
-        </div>
-    );
+        );
+    }
 }
+
 
 export default Navbar;

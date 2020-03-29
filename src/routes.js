@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from  'react-router-dom';
 
-import Header from './Layout/Navbar/Header'
+import Navbar from './Layout/Navbar/Navbar'
 
 import Home from './pages/Home';
 import About from './pages/About';
@@ -12,7 +12,7 @@ import Notes from './pages/Notes';
 const Routes = () => {
     return (
         <BrowserRouter>
-            <Header />
+            <Navbar />
 
             <Switch>
                 <Route exact path="/" component={Home} />
