@@ -1,6 +1,6 @@
 .sidenav{
     color: #efefef;
-    background: #345DA7;
+    background: #022B3A;
     height: 100%;
     width: 0;
     position: fixed;
@@ -10,6 +10,10 @@
     overflow-x: hidden;
     padding-top: 10px;
     transition: 0.5s;
+
+    outline-width:  5px;
+    outline-color: #022B3A;
+    outline-style: solid;
 }
 
 .navitem {
@@ -42,10 +46,10 @@
 }
 
 #colapse-btn {
-    background-color: #345DA7;
+    background-color: #022B3A;
     border-radius: 0;
     border-bottom-right-radius: 40%;
-    position: absolute;
+    position: fixed;
     z-index: 0;
     left: 0;
     top: 0;
