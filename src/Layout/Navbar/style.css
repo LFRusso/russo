@@ -18,12 +18,16 @@
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    display: block;
+    display: list-item;
     border: 10px;
+
+    transition: 0.3s;
+
+    position: relative;
 }
 
 .navitems {
-    display: flex;
+    display: block;
     flex-direction: column;
     justify-content: space-between;
     padding-top: 35px;
@@ -83,4 +87,17 @@
 
 .collapsed {
     display:block;
+}
+
+.collapsed .nav-icon{
+    transition: 3s;
+}
+
+.nav-icon{
+    position: absolute;
+    margin-top: 5px;
+}
+
+.nav-name {
+    margin-left: 24px;
 }

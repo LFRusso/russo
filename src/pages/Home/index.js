@@ -1,5 +1,6 @@
 import React from 'react';
 import Postlist from './posts/Postslist';
+import Header from '../../Layout/Header/Header';
 
 import './style.css'
 

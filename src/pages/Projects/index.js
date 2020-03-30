@@ -1,9 +1,21 @@
 import React from 'react';
 
 const Projects = () => {
+    const projectList = [{
+        title: "",
+        img: "",
+        description: "",
+    }];
+
+    const projects = projectList.map((project) =>
+        <div class="col">
+            {project.title}    
+        </div>  
+    );
+
     return (
-        <div>
-            <h1>Projetos</h1>
+        <div class="row">   
+            { projects }
         </div>
     )
 }

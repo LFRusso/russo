@@ -34,10 +34,10 @@ class Navbar extends React.Component {
 
                 <div className={"sidenav " + collapsed} onClick={this.toggleNavbar}>
                     <div class="navitems">
-                        <Link to="/" className="text-link" onClick={ this.toggleNavbar }><Navitem> Home </Navitem></Link>
-                        <Link to="/about" className="text-link" onClick={ this.toggleNavbar }><Navitem> Sobre </Navitem></Link>
-                        <Link to="/projects" className="text-link" onClick={ this.toggleNavbar }><Navitem> Projetos </Navitem></Link>
-                        <Link to="/notes" className="text-link" onClick={ this.toggleNavbar }><Navitem> Notas </Navitem></Link>
+                        <Link to="/" className="text-link" onClick={ this.toggleNavbar }><Navitem icon="home"> Home </Navitem></Link>
+                        <Link to="/about" className="text-link" onClick={ this.toggleNavbar }><Navitem icon="about"> Sobre </Navitem></Link>
+                        <Link to="/projects" className="text-link" onClick={ this.toggleNavbar }><Navitem icon="projects"> Projetos </Navitem></Link>
+                        <Link to="/notes" className="text-link" onClick={ this.toggleNavbar }><Navitem icon="notes"> Notas </Navitem></Link>
                     </div>
                     <div className="sidenav-foot">
                         <h3>@russo</h3>
