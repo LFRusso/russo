@@ -1,6 +1,6 @@
 .sidenav{
     color: #efefef;
-    background: #022B3A;
+    background: rgba(2,43,58, 0.95);
     height: 100%;
     width: 200px;
     position: fixed;
@@ -26,14 +26,18 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-top: 20px;
+    padding-top: 35px;
 
     transition: 0.3s;
 }
 
 .navitem:hover {
     background-color: rgba(255,255,255,0.1);
-    transition: 0.5s;
+    transition: 0.3s;
+}
+
+.navitem:not(:hover) {
+    transition: 0.3s;
 }
 
 .sidenav-foot {
@@ -55,7 +59,7 @@
 }
 
 .collapse-btn {
-    background-color: #022B3A;
+    background-color: rgba(2,43,58, 0.95);
     border-radius: 0;
     border-bottom-right-radius: 40%;
     position: fixed;
