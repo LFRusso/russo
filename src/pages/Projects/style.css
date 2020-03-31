@@ -2,7 +2,7 @@
     max-width: 18rem;
     width: 100%;
     align-items: center;
-    background-color: rgb(194, 193, 194, 0.4);
+    background-color: rgb(194, 193, 194, 0.2);
     min-height: 38rem;
     margin: 10px;
 
@@ -25,9 +25,9 @@
 }
 
 .project-title {
-    font-size: 20px;
-    margin-bottom: 15px;
-    font-weight: 200;
+    font-size: 25px;
+    margin-top: 15px;
+    font-weight: 500;
     color: #DE4842;
 
     text-align: center;
@@ -60,4 +60,12 @@
 
 .project-content {
     display: block;
+}
+
+.project-card hr {
+    border: #DE4842;
+    background-color: #DE4842;
+    width: 60%;
+    height: 1px;
+    margin-bottom: 20px;
 }

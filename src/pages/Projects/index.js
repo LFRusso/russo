@@ -60,8 +60,8 @@ const Projects = () => {
     const projects = projectList.map((project) =>
         <div class="col project-card">
             <img src= {project.img} className="project-img" />
-            <hr></hr>
             <span className="project-title">{project.title}</span>    
+            <hr />
             <div className="project-content">
                 {project.description}
             </div>
