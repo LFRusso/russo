@@ -5,6 +5,7 @@ import Header from '../../Layout/Header/Header';
 import './style.css'
 
 const Home = () => {
+    React.useEffect(() => { window.scrollTo(0, 0); }, []);
     return (
         <div>   
             <Postlist />

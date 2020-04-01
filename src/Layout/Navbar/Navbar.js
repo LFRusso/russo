@@ -40,7 +40,7 @@ class Navbar extends React.Component {
                         <Link to="/notes" className="text-link" onClick={ this.toggleNavbar }><Navitem icon="notes"> Notas </Navitem></Link>
                     </div>
                     <div className="sidenav-foot">
-                        <h3>@russo</h3>
+                        <span><a className="text-link" target="_blank" href={"https://www.youtube.com/watch?v=2MtOpB5LlUA&t=223"}>@</a>russo</span>
                     </div>
                 </div>
 

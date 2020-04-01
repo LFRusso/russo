@@ -11,16 +11,19 @@ const Post2 = () => {
 
     const palette1 = paletteJojo.map((color) =>
         <div className="color-div col-1" style={{backgroundColor: color}}>
+            <span className="color-name">{color}</span>
         </div>
     );
 
     const palette2 = paletteSite.map((color) =>
         <div className="color-div col-1" style={{backgroundColor: color}}>
+            <span className="color-name">{color}</span>
         </div>
     );
 
     const palette3 = paletteVaporwave.map((color) =>
         <div className="color-div col-1" style={{backgroundColor: color}}>
+            <span className="color-name">{color}</span>
         </div>
     ); 
 

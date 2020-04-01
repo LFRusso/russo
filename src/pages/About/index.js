@@ -8,6 +8,18 @@ import siteV1 from '../../assets/img/projects/site.png'
 import siteV2 from '../../assets/img/site2.png'
 
 const About = () => {
+    React.useEffect(() => { window.scrollTo(0, 0); }, []);
+
+    const paletteSite = ["#022B3A", "#EFEFEF", "#C2C1C2", "#DE4842", "#F4B685"];
+    
+    const palette = paletteSite.map((color) =>
+    <div className="color-div" style={{backgroundColor: color}}>
+        <span className="color-name">{color}</span>
+    </div>
+);
+
+    
+
     return (
         <div className="row sections-wrapper">
 
@@ -44,8 +56,14 @@ const About = () => {
                     <div className="col-sm-6 col-lg-6 col-md-6 section-img">
                         <img className="figure" src={siteV2}/>
                         <p>
-                            Segunda versão do site, finalmente usando boostrap e responsivo, com uma barra de navegação colapsável.
+                            Segunda versão do site, finalmente usando boostrap, responsivo, e com minha primeira barra de navegação colapsável.
                         </p>
+                    </div>
+                    <p>
+                        Atualmente o site está hospeadado no <b>GitHub Pages</b> e usando <b>ReactJS</b>. Abaixo a paleta de cores que estou usando nele:
+                    </p>
+                    <div className="palette">
+                        {palette}
                     </div>
 
                 </div>

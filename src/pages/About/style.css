@@ -52,3 +52,34 @@
     border: solid #022B3A 2px;
     margin-bottom: 10px;
 }
+
+
+
+.palette {
+    display: flex;
+    height: 80px;
+}
+
+.color-name {
+    display: none;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    margin: 5px;
+    background-color: #EFEFEF;
+}
+
+.color-div {
+    height: 90%;
+    transition: 0.2s;
+}
+
+.color-div:hover .color-name {
+    display: inline;
+}
+
+.color-div:hover {
+    min-width: 75px;
+    border: solid;
+    height: 100px;
+}

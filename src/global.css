@@ -32,6 +32,6 @@ body {
     text-decoration: inherit;
 }
 
-b {
+b, h1, h2 {
     color: #DE4842;
 }

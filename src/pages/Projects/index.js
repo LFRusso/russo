@@ -12,6 +12,7 @@ import  pooIcon from '../../assets/img/projects/poo.png';
 
 
 const Projects = () => {
+    React.useEffect(() => { window.scrollTo(0, 0); }, []);
     const projectList = [{
         title: "Gepac",
         img: gepacIcon,

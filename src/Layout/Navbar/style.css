@@ -46,18 +46,26 @@
 
 .sidenav-foot {
     bottom: 0;
+    margin-bottom: 5px;
+    margin-left: 10px;
     position: absolute;
-    
+    color: #efefef;
     transition: 0.3s;
 }
 
-.sidenav-foot h3:hover {
-    font-size: 3em;
-    
-    transition: 0.5s;;
+.sidenav-foot span {
+    font-size: 20px;
+    font-weight: 900;
+    opacity: 0.5;
 }
 
-.sidenav-foot h3:not(:hover) {
+.sidenav-foot span:hover {
+    font-size: 2em;
+    transition: 0.5s;;
+    opacity: 1;
+}
+
+.sidenav-foot span:not(:hover) {
     
     transition: 0.5s;
 }

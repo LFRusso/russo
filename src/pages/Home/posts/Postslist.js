@@ -7,7 +7,7 @@ class Postlist extends React.Component {
 
     render () {
 
-        const posts = [Post1, Post2];
+        const posts = [Post1];
 
         const listposts = posts.map((post) =>
             <div className="post-container">

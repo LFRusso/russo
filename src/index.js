@@ -6,7 +6,7 @@ import Footer from './Layout/Footer/Footer';
 
 ReactDOM.render(
   <React.StrictMode>
-
+    
     <div className="App">
       <div className="wrapper" id="main">
         <App />
